@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    <TextView
+        android:background="@color/black"
+        android:textColor="@color/light"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="File Manager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </TextView>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonGoBack"
+            android:text="B"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </Button>
+
+        <Button
+            android:id="@+id/buttonRefresh"
+            android:text="R"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </Button>
+
+        <TextView
+            android:id="@+id/pathOutput"
+            android:background="@color/black"
+            android:textColor="@color/light"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="20sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/buttonPhoto"
+            android:text="P"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </Button>
+
+        <Button
+            android:id="@+id/buttonNewFolder"
+            android:text="NF"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </Button>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:id="@+id/buttonDelete"
+            android:text="Delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+        />
+        <Button
+            android:id="@+id/buttonRename"
+            android:text="Rename"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/buttonCopy"
+            android:text="Copy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/buttonPaste"
+            android:text="Paste"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            />
+        <!--
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        -->
+    </LinearLayout>
+</LinearLayout>
